@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temperature Converter</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.converter {
+  text-align: center;
+  padding: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-bottom: 1rem;
+}
+
+input {
+  padding: 0.5rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+p#result {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Temperature Converter</h1>
+  </header>
+  <main>
+    <div class="converter">
+      <h2>Celsius to Fahrenheit</h2>
+      <input type="number" id="celsiusInput" placeholder="Enter Celsius">
+      <button id="convertBtn">Convert</button>
+      <p id="result"></p>
+    </div>
+  </main>
+  <footer>
+    <p> 2023 Temperature Converter App</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
